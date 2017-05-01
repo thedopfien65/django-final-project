@@ -13,6 +13,7 @@
         <option value-'2'>Oldest First</option>
     </select>
     </div>
+    
     <div id="newComment">
         <form id="comForm" method="post">
         <p>New Comment: </p>
@@ -20,6 +21,10 @@
         <input type="submit" style="display: block;"></input>
         <button type="button" onclick="hideForm()">Cancel</button>
         </form>
+    </div>
+    
+    <div id="comments">
+        {% include "comment/commentNode.html" %}
     </div>
     
 </div>
