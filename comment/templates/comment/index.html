@@ -1,15 +1,23 @@
 {% load staticfiles %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'comment/style.css' %}">
 
 
 <div id="comment_board">
+    <div id="c_panel">
     <button type="button" onclick="showForm()">New Comment</button>
+    <label for="sortselector">Sort By: </label>
+    <select name="sortselector">
+        <option value='0'>Rating</option>
+        <option value='1'>Newest First</option>
+        <option value-'2'>Oldest First</option>
+    </select>
+    </div>
     <div id="newComment">
         <form id="comForm" method="post">
         <label for="comText">New Comment:</label>
         <textarea name="comText" id="comText"></textarea>
-        <submit>Post Comment</submit>
+        <input type="submit"></input>
         </form>
     </div>
     
