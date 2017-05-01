@@ -1,8 +1,10 @@
+{% for comment in comment_board %}
 <div class="commentNode">
-    <p class="commentNodeText">Sample Message</p>
-    <p class="commentNodeAuthor">Sample Author</p>
-    <p class="commentNodeRating">Rating: 0</p>
-    <p class="commentNodeDate">Date Published: dd/mm/yy</p>
+    <p class="commentNodeText">{{ comment.comment_text }}</p>
+    <p class="commentNodeAuthor">{{ comment.comment_author }}</p>
+    <p class="commentNodeRating">Rating: {{ comment.comment_rating }}</p>
+    <p class="commentNodeDate">Date Published: {{ comment.comment_date }}</p>
     <button class="upvote">Upvote</button>
     <button class="downvote">Downvote</button>
 </div>
+{% endfor %}

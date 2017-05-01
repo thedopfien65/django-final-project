@@ -1,5 +1,6 @@
 <div id="newComment">
         <form id="comForm" method="post">
+        {% csrf_token %}
         <p>New Comment: </p>
         <textarea name="comText" id="comText"></textarea>
         <input type="submit" style="display: block;"></input>
