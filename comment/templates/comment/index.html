@@ -15,9 +15,10 @@
     </div>
     <div id="newComment">
         <form id="comForm" method="post">
-        <label for="comText">New Comment:</label>
+        <p>New Comment: </p>
         <textarea name="comText" id="comText"></textarea>
-        <input type="submit"></input>
+        <input type="submit" style="display: block;"></input>
+        <button type="button" onclick="hideForm()">Cancel</button>
         </form>
     </div>
     
@@ -25,7 +26,11 @@
 
 <script>
     function showForm(){
-      var x =document.getElementById("newComment");
+      var x = document.getElementById("newComment");
       x.style.display = "block";
+    }
+    function hideForm(){
+      var x = document.getElementById("newComment");
+      x.style.display = "none";
     }
 </script>
