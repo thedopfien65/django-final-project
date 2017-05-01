@@ -1,0 +1,23 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css %}">
+
+
+<div id="comment_board">
+    <button type="button" onclick="showForm()">New Comment</button>
+    <div id="newComment">
+        <form id="comForm" method="post">
+        <label for="comText">New Comment:</label>
+        <textarea name="comText" id="comText"></textarea>
+        <submit>Post Comment</submit>
+        </form>
+    </div>
+    
+</div>
+
+<script>
+    function showForm(){
+      var x =document.getElementById("newComment");
+      x.style.display = "block";
+    }
+</script>

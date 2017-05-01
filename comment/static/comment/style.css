@@ -1,0 +1,10 @@
+html {
+    width: 1200px;
+    background-color: #dddddd;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#newComment {
+    display: none;    
+}
